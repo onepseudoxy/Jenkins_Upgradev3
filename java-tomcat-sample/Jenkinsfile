@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build Application') {
             steps {
-                powershell 'mvn -f java-tomcat-sample/pom.xml clean package'
+                pwsh 'mvn -f java-tomcat-sample/pom.xml clean package'
             }
             post {
                 success {
